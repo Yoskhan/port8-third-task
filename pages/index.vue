@@ -31,13 +31,12 @@ export default {
             document.documentElement.scrollTop,
             document.body.scrollTop
           ) +
-            window.innerHeight ===
-          document.documentElement.offsetHeight;
+            window.innerHeight >
+          document.documentElement.offsetHeight - 10;
 
         if (bottomOfWindow) {
-          this.scrolledToBottom = true;
-          console.log(this.pageToLoad);
           this.getNewPage(this.pageToLoad);
+          console.log(this.pageToLoad);
         }
       };
     },

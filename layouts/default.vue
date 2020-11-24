@@ -24,4 +24,10 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
 </style>
